@@ -27,7 +27,7 @@ function create_floor() {
 	var width = 1000;
 	var mass = 0; // static object
 	var geometry = cube_geometry(width,height,width);
-	var mat = window.materials.wire;
+	var mat = materials.wire;
 	var floor = new Physijs.BoxMesh(geometry,mat,mass);
 	floor.position.y = -height;
 	return floor;
@@ -41,7 +41,7 @@ function create_boxes() {
 	for (var i = 1; i < 6; i++) {
 		var box = new Physijs.BoxMesh(
 			geometry,
-			window.materials.wire
+			materials.wire
 		);
 		box.position.set( 0, i * (size + pad), 0 );
 		boxes.push( box );
