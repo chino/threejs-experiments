@@ -4,7 +4,7 @@ Physijs.scripts.ammo = '../../js/ammo.js';
 Physijs.scripts.worker = '../../js/physijs_worker.js';
 
 // Some shared materials for performance.
-window.materials = {
+var materials = {
 	wire: new THREE.MeshBasicMaterial({
 					color: 0xff0000,
 					wireframe: true 
