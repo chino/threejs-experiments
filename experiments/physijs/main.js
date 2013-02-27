@@ -22,17 +22,6 @@ var cube_geometry = (function (){
 	}
 })();
 
-$(document).ready(function () {
-	var state = init();
-	var bodies = create_objects(state.scene);
-	var main_loop = function () {
-		requestAnimationFrame(main_loop);
-		state.scene.simulate();
-		state.renderer.render( state.scene, state.camera );
-	}
-	main_loop();
-});
-
 function create_floor() {
 	var height = 50;
 	var width = 1000;
@@ -102,3 +91,14 @@ function init() {
 		renderer:    setup_renderer(),
 	};
 }
+
+$(document).ready(function () {
+	var state = init();
+	var bodies = create_objects(state.scene);
+	var main_loop = function () {
+		requestAnimationFrame(main_loop);
+		state.scene.simulate();
+		state.renderer.render( state.scene, state.camera );
+	}
+	main_loop();
+});
