@@ -24,7 +24,7 @@ var cube_geometry = (function (){
 
 function create_floor() {
 	var height = 50;
-	var width = 1000;
+	var width = 2000;
 	var mass = 0; // static object
 	var geometry = cube_geometry(width,height,width);
 	var mat = materials.wire;
