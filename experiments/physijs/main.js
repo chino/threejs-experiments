@@ -1,6 +1,6 @@
 'use strict';
 
-Physijs.scripts.ammo = '../../js/ammo.js';
+Physijs.scripts.ammo = 'ammo.js'; // relative to physijs_worker.js
 Physijs.scripts.worker = '../../js/physijs_worker.js';
 
 // Some shared materials for performance.
