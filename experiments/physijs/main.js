@@ -38,7 +38,7 @@ function create_boxes() {
 	var size = 200;
 	var geometry = cube_geometry( size, size, size );
 	var pad = 1;
-	for (var i = 1; i < 6; i++) {
+	for (var i = 1; i < 100; i++) {
 		var box = new Physijs.BoxMesh(
 			geometry,
 			materials.wire
