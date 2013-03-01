@@ -6,9 +6,9 @@ Physijs.scripts.worker = '../../js/physijs_worker.js';
 // Some shared materials for performance.
 var materials = {
 	wire: new THREE.MeshBasicMaterial({
-					color: 0xff0000,
-					wireframe: true 
-				})
+		color: 0xff0000,
+		wireframe: true 
+	})
 };
 
 // Share cubes in scene for performance.
