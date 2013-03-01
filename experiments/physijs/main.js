@@ -72,8 +72,7 @@ function create_camera() {
 function setup_renderer(renderer) {
 	var renderer = new THREE.CanvasRenderer();
 	//var renderer = new THREE.WebGLRenderer();
-	var height = window.innerHeight;
-	renderer.setSize(window.innerWidth, height);
+	renderer.setSize(window.innerWidth, window.innerHeight);
 	document.body.appendChild(renderer.domElement);
 	return renderer;
 }
